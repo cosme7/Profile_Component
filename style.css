@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&family=Rubik:wght@300;400&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0C0B0B;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cont-principal{
+    padding: 20px;
+    display: flex;
+    align-items: center;  
+    flex-direction: column;
+    background-color: #0F0E0E;
+    width: 35vw;
+    height: 340px;
+}
+
+.topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.info{   
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    margin: 5px;
+    width: 85%;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+.sociais{
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.raviel{
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.botão{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+button{
+    cursor: pointer;
+    background-image: url('design/icon_edit.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    background-color: #0F0E0E;
+    font-weight: bold;
+    padding: 8px 8px 8px 35px;
+}
+
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 85%;
+    height: 50%;
+}
+
+.green{
+    width: 30%;
+    height: 60%;
+    padding: 15px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    background-color: #046313;
+    border-radius: 10px;
+}
+
+.blue{
+    width: 30%;
+    height: 60%;
+    padding: 15px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    background-color: #044A7D;
+    border-radius: 10px;
+}
+
+.yellow{
+    width: 30%;
+    height: 60%;
+    padding: 15px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    background-color: #725200;
+    border-radius: 10px;
+}
+
+.h4-bot{
+    font-weight: 300;
+}
+
+.num{
+    margin-top: 4px;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 1440px){
+    .cont-principal{
+        width: 70%;
+    }
+}    
+
+@media screen and (max-width: 1024px){
+    .cont-principal{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px){
+     .cont-principal{
+        position: absolute;
+        width: 100%;
+        height: 65%;
+    }
+
+    .topo{
+        position: relative;
+        bottom: 90px;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .info{
+        text-align: center;
+        width: 60%;
+    }
+
+    .bottom{
+        position: relative;
+        bottom: 90px;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .green, .blue, .yellow{
+        width: 50%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .green, .blue, .yellow{
+        width: 80%;
+    }
+}
+    
